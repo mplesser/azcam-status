@@ -1,6 +1,6 @@
 # azcam-status
 
-*azcam-status* is an python extension package for *azcam* which implements browser-based status page.
+*azcam-status* is an *azcam* extension which implements a browser-based status page.
 
 ## Documentation
 
