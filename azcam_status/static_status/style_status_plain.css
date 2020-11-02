@@ -1,0 +1,31 @@
+#title {
+    margin: 0px;
+    padding: 0px;
+    color: blue;
+}
+
+table,
+th,
+td {
+    border: 1px solid blue;
+    border-collapse: collapse;
+    font-family: verdana;
+}
+
+#messages,
+#timestamp {
+    font-family: verdana;
+}
+
+#progress {
+    margin: 2px;
+    width: 200px;
+    height: 10px;
+    background-color: lightgray;
+}
+
+#progressbar {
+    width: 50%;
+    height: 10px;
+    background-color: blue;
+}
