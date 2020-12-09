@@ -19,7 +19,8 @@ def show_status(page):
     return render_template(f"{page}.html")
 
 
-if azcam.db.get("webapp") is not None:
-    azcam.db.webapp.register_blueprint(status)
+def load():
+    if azcam.db.get("webapp") is not None:
+        azcam.db.webapp.register_blueprint(status)
 
-azcam.log("Loaded azcam_status")
+    azcam.log("Loaded azcam_status")
