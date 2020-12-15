@@ -20,7 +20,7 @@ def show_status(page):
 
 
 def load():
-    if azcam.db.get("webapp") is not None:
-        azcam.db.webapp.register_blueprint(status)
+    if azcam.db.get("webserver") is not None:
+        azcam.db.webserver.app.register_blueprint(status)
 
     azcam.log("Loaded azcam_status")
