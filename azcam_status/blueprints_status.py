@@ -7,10 +7,7 @@ from flask import Blueprint, render_template
 import azcam
 
 status = Blueprint(
-    "status",
-    __name__,
-    static_folder="static_status",
-    template_folder="",
+    "status", __name__, static_folder="static_status", template_folder="",
 )
 
 
