@@ -8,6 +8,7 @@ setup(
     version="20.1",
     description="azcam browser-based status page",
     long_description=long_description,
+    long_description_content_type="text/markdown",
     author="Michael Lesser",
     author_email="mlesser@arizona.edu",
     keywords="ccd imaging astronomy observation observatory",
