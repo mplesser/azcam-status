@@ -1,0 +1,2 @@
+include azcam_status/status.html
+include azcam_status/static_status/*
