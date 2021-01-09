@@ -4,7 +4,7 @@
 
 ## Installation
 
-`pip install azam-status`
+`pip install azcam-status`
 
 Or download from github: https://github.com/mplesser/azcam-status.git.
 
