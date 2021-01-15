@@ -1,33 +1,25 @@
-.jumbotron {
-    margin: 0px;
-    padding: 0px;
-    color: blue;
+.card {
+    margin-left: 10px;
+}
+
+table,
+th,
+td {
+    border: 1px solid blue;
+    border-collapse: collapse;
+}
+
+#progress {
+    margin: 2px;
+    width: 200px;
+    height: 15px;
+    background-color: lightgray;
+    margin-left: 10px;
 }
 
 #progressbar {
-    height: 15px;
-    width: 100%;
-}
-
-.card {
-    padding: 1px;
-    margin: 1px;
-}
-
-.card-header {
-    padding: 0px;
-    margin: 0px;
-}
-
-.card-body {
-    padding: 0px;
-    margin: 0px;
-}
-
-.row {
-    padding: 0 !important;
-}
-
-[class*="col-"] {
-    padding: 0px !important;
+    width: 50%;
+    height: 10px;
+    background-color: blue;
+    margin-left: 10px;
 }

@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="static_status/style_status_plain.css">
+    <link rel="stylesheet" type="text/css" href="static_status/style_status.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" href="static/favicon.ico">
 
@@ -18,57 +18,76 @@
 
 <body>
 
-    <h2 id="title">AzCam Status</h2>
+    <div class="container">
 
-    <table>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">AzCam Status</h4>
 
-        <tr>
-            <td>Image Filename:</td>
-            <td><span id="imagefilename" title="Current exposure's filename">unknown</span></td>
-        </tr>
+                <table>
 
-        <tr>
-            <td>Image Title:</td>
-            <td><span id="imagetitle" title="Current image title">unknown</span></td>
-        </tr>
+                    <tr>
+                        <td>Image Filename</td>
+                        <td><span id="imagefilename" title="Current exposure's filename">unknown</span></td>
+                    </tr>
 
-        <tr>
-            <td>Image Type:</td>
-            <td><span id="imagetype" title="Current image type">unknown</span></td>
-        </tr>
+                    <tr>
+                        <td>Image Title</td>
+                        <td><span id="imagetitle" title="Current image title">unknown</span></td>
+                    </tr>
 
-        <tr>
-            <td>Exposure Time:</td>
-            <td><span id="exposuretime" title="Current exposure time (sec)">0</span>
-            </td>
-        </tr>
+                    <tr>
+                        <td>Image Type</td>
+                        <td><span id="imagetype" title="Current image type">unknown</span></td>
+                    </tr>
 
-        <tr>
-            <td>Test Image:</td>
-            <td><span id="testimage" title="1 for test image, 0 for normal image">0</span>
-            </td>
-        </tr>
+                    <tr>
+                        <td>Exposure Time</td>
+                        <td><span id="exposuretime" title="Current exposure time (sec)">0</span>
+                        </td>
+                    </tr>
 
-        <tr>
-            <td>Temperatures</td>
-            <td><span id="temps" type="number" title="Camera and Dewar temperatures (C)">[]</span>
-            </td>
-        </tr>
+                    <tr>
+                        <td>Test Image</td>
+                        <td><span id="testimage" title="1 for test image, 0 for normal image">0</span>
+                        </td>
+                    </tr>
 
-        <tr>
-            <td>Binning:</td>
-            <td><span id="binning" title="binning - [Col, Row]">[]</span>
-            </td>
-        </tr>
+                    <tr>
+                        <td>Temperatures</td>
+                        <td><span id="temps" type="number" title="Camera and Dewar temperatures (C)">[]</span>
+                        </td>
+                    </tr>
 
-    </table>
+                    <tr>
+                        <td>Binning</td>
+                        <td><span id="binning" title="binning - [Col, Row]">[]</span>
+                        </td>
+                    </tr>
 
-    <div id="progress">
-        <div id="progressbar" title="exposure progress"></div>
+                    <tr>
+                        <td>Message</td>
+                        <td><span id="message" title="exposure message"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Timestamp</td>
+                        <td><span id="timestamp" title="timestamp from server"></span>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+
+        </div>
+
+        <div id="progress">
+            <div id="progressbar" title="exposure progress"></div>
+        </div>
+
     </div>
-
-    <span id="message" title="messages">messages</span>
-    <div id="timestamp" title="time stamp"></div>
 
     <!-- code  -->
     <script src="static/jquery-3.4.1.min.js"></script>
