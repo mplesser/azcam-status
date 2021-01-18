@@ -1,5 +1,5 @@
 .card {
-    margin-left: 10px;
+    margin-left: 1px;
 }
 
 table,
@@ -7,6 +7,18 @@ th,
 td {
     border: 1px solid blue;
     border-collapse: collapse;
+}
+
+.jumbotron {
+    margin: 0px;
+    padding: 0px;
+    color: blue;
+}
+
+#title {
+    margin: 5px;
+    padding: 5px;
+    background-color: none;
 }
 
 #progress {

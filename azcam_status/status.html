@@ -8,27 +8,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="static_status/style_status.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Bootstrap -->
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="static/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="static_status/style_status.css">
 
     <title>AzCam Status</title>
-
 </head>
 
 <body>
 
+    <div class="jumbotron text-center">
+        <h2 id="title" class="display-5">AzCam Status</h2>
+    </div>
+
     <div class="container">
 
-        <div class="card">
-            <div class="card-body">
-                <h4 class="card-title">AzCam Status</h4>
-
+        <div class="card ">
+            <div class="card-body ">
                 <table>
 
                     <tr>
                         <td>Image Filename</td>
-                        <td><span id="imagefilename" title="Current exposure's filename">unknown</span></td>
+                        <td><span id="imagefilename " title="Current exposure 's filename">unknown</span></td>
                     </tr>
 
                     <tr>
@@ -80,11 +82,10 @@
                 </table>
             </div>
 
+            <div id="progress">
+                <div id="progressbar" title="exposure progress"></div>
+            </div>
 
-        </div>
-
-        <div id="progress">
-            <div id="progressbar" title="exposure progress"></div>
         </div>
 
     </div>
