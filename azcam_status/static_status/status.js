@@ -12,6 +12,7 @@ $(document).ready(function() {
             $("#testimage").text(data.data.imagetest);
             $("#exposurestate").text(data.data.exposurestate);
             $("#message").text(data.data.message);
+            $("#servermode").text(data.data.mode);
             //$("#progress").text(data.data.exposurelabel);
             $("#progressbar").css("width", data.data.progressbar + "%");
             $("#title").css("background-color", data.data.exposurecolor);
