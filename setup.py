@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="azcam-status",
-    version="21.1.4",
+    version="21.2.0",
     description="azcam browser-based status page",
     long_description=long_description,
     long_description_content_type="text/markdown",
